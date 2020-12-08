@@ -1,0 +1,297 @@
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style:none;
+}
+ 
+ *{
+	 margin: 0;
+	 padding: 0;
+	 font-family: "trebuchet", calibri;
+ }
+ body{
+	 background-color: #6c7073;
+		background-size: 100% 100%;
+  background-repeat: no-repeat;
+ }
+.contact-section{
+
+	background-size: cover;
+	padding: 40px 0;
+}
+
+.contact-section h1{
+	text-align: center;
+	color: #ddd;
+}
+
+.border{
+	width: 100px;
+	height: 10px;
+	background: #34495e;
+	margin: 40px auto;
+}
+
+.contact-form{
+	max-width: 600px;
+	margin: auto;
+	padding: 0 10px;
+	overflow: hidden;
+}
+
+.contact-form-text{
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 16px 0;
+	border: 0;
+	background: #111;
+	padding: 20px 40px;
+	outline: none;
+	color: #ddd;
+	transition: 0.5s;
+}
+
+.contact-form-text:focus{
+	box-shadow: 0 0 10px 4px #34495e;
+}
+
+textarea.contact-form-text{
+	height: 120px;
+}
+
+.contact-form-btn{
+	float: right;
+	border: 0;
+	background: #34495e;
+	color: #fff;
+	padding: 12px 50px;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.contact-form-btn:hover{
+	background: #2980b9;
+	
+}
+
+img{
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+
+header{
+	width: 100%;
+	height: 5rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+
+
+nav{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 0;
+	border-bottom: 1px solid rgba(255,255,255,.2);
+}
+	
+.nav-brand{
+	width: 2rem;
+}
+
+.menu-icons i{
+	font-size: 3.5rem;
+	color: #fafafa;
+	cursor: pointer;
+}
+
+.close i{
+	color: #eb648C;
+}
+
+.nav-list{
+	width: 25rem;
+	height: 100vh;
+	background-color: #75d7ff;
+	position: fixed;
+	top: 0;
+	right: -26rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 1500;
+	transition: all 650ms ease-in-out;
+}
+
+.nav-list.active{
+	right: 0;
+}
+
+.close{
+	position: absolute;
+	top: 1rem;
+	left: 1.5rem;
+}
+
+.nav-item{
+	margin: 1.5rem 0;
+}
+
+.nav-link{
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	color: rgba(0,0,0,.7);
+}
+
+
+.btn{
+	background-color: #eb648c;
+	border-radius: 2rem;
+	color: #fafafa;
+	display: inline-block;
+	margin-top: 2rem;
+	padding: 1rem 2.5rem;
+	text-transform: uppercase;
+	transition: background-color 650ms;
+}
+
+.btn:hover{
+	background-color: #ce587b;
+}
+
+
+
+.title-heading{
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 1rem;
+	margin-bottom: 10rem;
+	color: rgba(0,0,0,.7);
+}
+
+.title-heading h3{
+	font-size: 1.4rem;
+}
+
+.title-heading h1{
+	font-family: 'trebuchet MS', calibri;
+	font-size: 2rem;
+	margin: .5rem 0 1rem;
+}
+
+
+
+
+Footer{
+	padding: 2.5rem 0;
+	background-color: #d4f2fe;
+	text-align: center;
+	color: rgba(0,0,0,0.7);
+	margin-top: 2.5rem;
+}
+
+
+
+@media screen and (min-width: 700px){
+	header{
+		height: 8rem;
+	}
+
+
+	.nav-brand{
+		width: 3.5rem;
+	}
+
+.nav-list{
+	width: initial;
+	height: initial;
+	background-color: transparent;
+	position: initial;
+	top: initial;
+	right: initial;
+	flex-direction: row;
+	transition:initial;
+}
+
+.menu-icons{
+	display: none;
+}
+
+.nav-item{
+	margin: 0 2.5rem;
+}
+
+.nav-link,
+.current{
+	color: #fafafa;
+	position: relative;
+	font-size: 1.3rem;
+}
+
+.nav-link::before,
+.current::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -.5rem;
+	background-color: #eb648c;
+	height: 2px;
+	width: 100%;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 650ms;
+}
+	
+	.current::before{
+		transform: scaleX(1);
+}
+
+.nav-link:hover::before{
+	transform: scaleX(1);
+}
+
+
+.title-heading h1{
+	font-size: 2.5rem;
+}
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+#content-wrap {
+  padding-bottom: 2.5rem;   
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1.5rem;      
+  font-size: 20px;
+}
+
