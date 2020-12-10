@@ -1,13 +1,10 @@
 
-//Function expression to select elements
 const selectElement = (s) => document.querySelector(s);
 
-//Open the menu on click
 selectElement('.open') .addEventListener('click', () => {
   selectElement('.nav-list').classList.add('active');
 });
 
-//Close the menu on click
 selectElement('.close') .addEventListener('click', () => {
   selectElement('.nav-list').classList.remove('active');
 });
@@ -18,12 +15,12 @@ selectElement('.close') .addEventListener('click', () => {
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
+
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
